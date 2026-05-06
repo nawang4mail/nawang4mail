@@ -1,31 +1,40 @@
-/**
- * Header component
- *
- * Top navigation bar for your site. Set to remain visible as the
- * user scrolls so that they can constantly reach any part of your page.
- */
-import React from "react";
+import React, { useEffect, useState } from "react";
+
+const navLinks = [
+  { href: "#home", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#contributions", label: "Activity" },
+  { href: "#portfolio", label: "Portfolio" },
+  { href: "#footer", label: "Contact" },
+];
 
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+  const [active, setActive] = useState("#home");
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 50);
+
+      const sections = navLinks.map((l) => document.querySelector(l.href)).filter(Boolean);
+      const current = sections.findLast((s) => s.getBoundingClientRect().top <= 80);
+      if (current) setActive(`#${current.id}`);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <div
-      style={{
-        position: "fixed",
-        display: "flex",
-        justifyContent: "center",
-        gap: "2rem",
-        background: "rgba(255,255,255,0.75)",
-        padding: "1rem",
-        top: 0,
-        width: "100%",
-        zIndex: 10,
-      }}
-    >
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#footer">Contact</a>
-    </div>
+    <nav className={`site-nav${scrolled ? " scrolled" : ""}`}>
+      <span className="nav-brand">NG</span>
+      <div className="nav-links">
+        {navLinks.map(({ href, label }) => (
+          <a key={href} href={href} className={active === href ? "nav-link active" : "nav-link"}>
+            {label}
+          </a>
+        ))}
+      </div>
+    </nav>
   );
 };
 

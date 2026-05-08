@@ -5,7 +5,7 @@
 
 
 ## Current Projects
-- **Trading Bot**: [Link](https://github.com/nawang4mail/trading-bot)
+- **Trading Bot**: An automated trading algorithm that monitors EMA crossover and RSI. ([GitHub](https://github.com/nawang4mail/trading-bot) | [Live App](https://nawang-trading-bot.streamlit.app))
 - **NGO Management App**: Built with Java
 - **Checker Game**: Built with Java
 - **VR game**: Built in Unity

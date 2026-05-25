@@ -6,6 +6,7 @@
 
 ## Current Projects
 - **Trading Bot**: An automated trading algorithm that monitors EMA crossover and RSI. ([GitHub](https://github.com/nawang4mail/trading-bot) | [Live App](https://nawang-trading-bot.streamlit.app))
+- **Tibetan Calendar**: [Live View](https://tibetan-calendar.onrender.com) This application natively implements the complex mathematical formulas of the Phugpa tradition to calculate Tibetan lunisolar dates, leap months (Da Shol), skipped days (Chad), and repeated days (Lhag). It also includes a beautifully designed, culture-inspired user interface for browsing months and converting between Gregorian and Tibetan dates. 
 - **NGO Management App**: Built with Java
 - **Checker Game**: Built with Java
 - **VR game**: Built in Unity

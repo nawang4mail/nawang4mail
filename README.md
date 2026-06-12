@@ -6,7 +6,9 @@
 
 ## Current Projects
 - **Trading Bot**: An automated trading algorithm that monitors EMA crossover and RSI. ([GitHub](https://github.com/nawang4mail/trading-bot) | [Live App](https://nawang-trading-bot.streamlit.app))
-- **Tibetan Calendar**: [Live View](https://tibetan-calendar.onrender.com) This application natively implements the complex mathematical formulas of the Phugpa tradition to calculate Tibetan lunisolar dates, leap months (Da Shol), skipped days (Chad), and repeated days (Lhag). It also includes a beautifully designed, culture-inspired user interface for browsing months and converting between Gregorian and Tibetan dates. 
+- **Hedge bot multi agent system**: A four-agent quantitative trading pipeline powered by LangGraph + Ollama (local LLM, zero API cost), TimescaleDB for persistent market data and trade history, an XGBoost ML model trained on price + news + Reddit + earnings data, a FastAPI backend, and a suite of real-time HTML dashboards.
+- **Tibetan Calendar**: [Live View](https://tibetan-calendar.onrender.com) This application natively implements the complex mathematical formulas of the Phugpa tradition to calculate Tibetan lunisolar dates, leap months (Da Shol), skipped days (Chad), and repeated days (Lhag). It also includes a beautifully designed, culture-inspired user interface for browsing months and converting between Gregorian and Tibetan dates.
+- **Prediction Game**:[Live View](https://predict.nawang-lab.com) A real-time leaderboard app where players predict the outcomes of World Cup matches. An admin manages fixtures, players, and results through a protected panel — correct predictions earn points and the leaderboard updates automatically.
 - **NGO Management App**: Built with Java
 - **Checker Game**: Built with Java
 - **VR game**: Built in Unity
